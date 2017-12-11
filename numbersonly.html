@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Numbers Only</title>
+  <meta name="description" content="javascript code that copies only the numbers of an array and outputs a new array.  Coding Dojo Assignment">
+  <script type ="text/javascript">
+    <!--first create an if statement that goes through the array and pushes value to copy arrah, then use a type of number, if it is number then use contineu statemnet to skip of push action-->
+    var numbersOnly = [1, "apple", -3, "orange", 0.5];
+    var copyArray = []
+
+    function copy(array_value){
+      for (i = 0; i < array_value.length; i++){
+        if (typeof array_value[i] === "number"){
+          copyArray.push(array_value[i]);
+        } else{
+          continue;
+        }
+      }
+    }
+
+    copy(numbersOnly);
+    console.log(copyArray);
+
+  </script>
+<head>
+</html>
